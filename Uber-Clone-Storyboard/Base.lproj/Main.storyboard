@@ -170,17 +170,77 @@
                                                     <constraint firstAttribute="trailing" secondItem="vBS-ea-i64" secondAttribute="trailing" id="oTF-im-XQm"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g1H-XC-Fay" userLabel="Vehicle Suggestions View">
+                                                <rect key="frame" x="8" y="361" width="414" height="150"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ag-oS-FP5" userLabel="Vehicle Suggestions Header View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-Ve-SD7">
+                                                                <rect key="frame" x="8" y="8" width="310.66666666666669" height="29"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                                <color key="textColor" red="0.0078431377190000002" green="0.0078431377190000002" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="NFu-4h-Cz8">
+                                                                <rect key="frame" x="326.66666666666669" y="8" width="79.333333333333314" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qk1-mN-jlj">
+                                                                <rect key="frame" x="326.66666666666669" y="8" width="79.333333333333314" height="29"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="PCV-Ve-SD7" firstAttribute="width" secondItem="7Ag-oS-FP5" secondAttribute="width" multiplier="0.75" id="J6O-Cq-9FT"/>
+                                                            <constraint firstItem="NFu-4h-Cz8" firstAttribute="leading" secondItem="PCV-Ve-SD7" secondAttribute="trailing" constant="8" id="N6d-Ck-LDT"/>
+                                                            <constraint firstItem="PCV-Ve-SD7" firstAttribute="top" secondItem="7Ag-oS-FP5" secondAttribute="top" constant="8" id="NYQ-vj-CY1"/>
+                                                            <constraint firstItem="Qk1-mN-jlj" firstAttribute="top" secondItem="7Ag-oS-FP5" secondAttribute="top" constant="8" id="SIB-t0-Rmh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Qk1-mN-jlj" secondAttribute="trailing" constant="8" id="T6K-eu-7LO"/>
+                                                            <constraint firstAttribute="bottom" secondItem="NFu-4h-Cz8" secondAttribute="bottom" constant="8" id="c6v-BC-CzQ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Qk1-mN-jlj" secondAttribute="bottom" constant="8" id="dkz-1h-Whm"/>
+                                                            <constraint firstItem="NFu-4h-Cz8" firstAttribute="top" secondItem="7Ag-oS-FP5" secondAttribute="top" constant="8" id="eni-ZG-hjq"/>
+                                                            <constraint firstItem="PCV-Ve-SD7" firstAttribute="leading" secondItem="7Ag-oS-FP5" secondAttribute="leading" constant="8" id="lyQ-A8-ibE"/>
+                                                            <constraint firstItem="Qk1-mN-jlj" firstAttribute="leading" secondItem="PCV-Ve-SD7" secondAttribute="trailing" constant="8" id="vWB-0T-hCE"/>
+                                                            <constraint firstAttribute="bottom" secondItem="PCV-Ve-SD7" secondAttribute="bottom" constant="8" id="wzI-18-DFl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="NFu-4h-Cz8" secondAttribute="trailing" constant="8" id="zsk-QR-MXE"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-YY-buR" userLabel="Vehicle Suggestions Body View">
+                                                        <rect key="frame" x="0.0" y="53" width="414" height="89"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="7Ag-oS-FP5" firstAttribute="top" secondItem="g1H-XC-Fay" secondAttribute="top" id="Au0-Fb-S2W"/>
+                                                    <constraint firstItem="7Ag-oS-FP5" firstAttribute="leading" secondItem="g1H-XC-Fay" secondAttribute="leading" id="NLQ-fp-MOn"/>
+                                                    <constraint firstItem="YVV-YY-buR" firstAttribute="leading" secondItem="g1H-XC-Fay" secondAttribute="leading" id="RLC-Pg-9A2"/>
+                                                    <constraint firstItem="YVV-YY-buR" firstAttribute="top" secondItem="7Ag-oS-FP5" secondAttribute="bottom" constant="8" id="UtI-CB-vru"/>
+                                                    <constraint firstItem="7Ag-oS-FP5" firstAttribute="height" secondItem="g1H-XC-Fay" secondAttribute="height" multiplier="0.3" id="Y46-99-b51"/>
+                                                    <constraint firstAttribute="bottom" secondItem="YVV-YY-buR" secondAttribute="bottom" constant="8" id="dfg-GP-QKL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YVV-YY-buR" secondAttribute="trailing" id="rCJ-P6-B6I"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7Ag-oS-FP5" secondAttribute="trailing" id="rUQ-8r-AfV"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="OMi-wu-nyG" firstAttribute="top" secondItem="bOa-BV-hig" secondAttribute="top" id="4Zq-cl-DH2"/>
                                             <constraint firstItem="Zoo-Wh-NaA" firstAttribute="leading" secondItem="bOa-BV-hig" secondAttribute="leading" constant="8" id="4hH-Ub-cn4"/>
+                                            <constraint firstItem="g1H-XC-Fay" firstAttribute="leading" secondItem="bOa-BV-hig" secondAttribute="leading" constant="8" id="A9e-7R-gLj"/>
                                             <constraint firstItem="OMi-wu-nyG" firstAttribute="leading" secondItem="bOa-BV-hig" secondAttribute="leading" id="IuX-de-9lX"/>
                                             <constraint firstAttribute="trailing" secondItem="Zoo-Wh-NaA" secondAttribute="trailing" constant="8" id="JtP-Pa-asc"/>
+                                            <constraint firstItem="g1H-XC-Fay" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.1" id="MOA-ZI-MsT"/>
                                             <constraint firstItem="Zoo-Wh-NaA" firstAttribute="top" secondItem="OMi-wu-nyG" secondAttribute="bottom" constant="8" id="TyW-ih-LMQ"/>
                                             <constraint firstItem="OMi-wu-nyG" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.08" id="Zcf-kc-t4a"/>
+                                            <constraint firstItem="g1H-XC-Fay" firstAttribute="top" secondItem="Zoo-Wh-NaA" secondAttribute="bottom" constant="8" symbolic="YES" id="ZfO-5U-bHh"/>
                                             <constraint firstItem="Zoo-Wh-NaA" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.15" id="Zrj-AI-PKs"/>
                                             <constraint firstAttribute="height" constant="1500" id="hj1-zK-frw"/>
+                                            <constraint firstAttribute="trailing" secondItem="g1H-XC-Fay" secondAttribute="trailing" constant="8" id="mVw-ck-qmS"/>
                                             <constraint firstAttribute="trailing" secondItem="OMi-wu-nyG" secondAttribute="trailing" id="nke-JQ-D9u"/>
                                         </constraints>
                                     </view>
