@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="DestinationSuggestionsTableViewCell" customModule="Uber_Clone_Storyboard">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_map_pinpoint" translatesAutoresizingMaskIntoConstraints="NO" id="M1r-PE-0uZ">
+                        <rect key="frame" x="10.000000000000004" y="10" width="45.333333333333343" height="78"/>
+                        <color key="backgroundColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Tf-HZ-3Tx">
+                        <rect key="frame" x="403" y="12" width="39" height="74.333333333333329"/>
+                        <color key="tintColor" red="0.93333333730000001" green="0.93333333730000001" blue="0.93333333730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBz-BA-MUQ" userLabel="Destinations View">
+                        <rect key="frame" x="65.333333333333343" y="10" width="327.66666666666663" height="78"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Santiago Bernabéu Stadium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQR-V8-v0H">
+                                <rect key="frame" x="10" y="0.0" width="307.66666666666669" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0078431377190000002" green="0.0078431377190000002" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Av. de Concha Espina, 1, 28036 Madrid, Spain" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-fc-5rx">
+                                <rect key="frame" x="10" y="39" width="307.66666666666669" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.27843138579999999" green="0.27450981740000002" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ODm-fc-5rx" secondAttribute="bottom" constant="10" id="Deh-Vm-mOI"/>
+                            <constraint firstItem="wQR-V8-v0H" firstAttribute="leading" secondItem="YBz-BA-MUQ" secondAttribute="leading" constant="10" id="RKr-QF-SdX"/>
+                            <constraint firstAttribute="trailing" secondItem="ODm-fc-5rx" secondAttribute="trailing" constant="10" id="Rhd-SX-NKQ"/>
+                            <constraint firstAttribute="trailing" secondItem="wQR-V8-v0H" secondAttribute="trailing" constant="10" id="Ryc-ew-tg0"/>
+                            <constraint firstItem="ODm-fc-5rx" firstAttribute="leading" secondItem="YBz-BA-MUQ" secondAttribute="leading" constant="10" id="c0Y-SW-9S3"/>
+                            <constraint firstItem="wQR-V8-v0H" firstAttribute="height" secondItem="YBz-BA-MUQ" secondAttribute="height" multiplier="0.5" id="gF6-j6-ehT"/>
+                            <constraint firstItem="ODm-fc-5rx" firstAttribute="top" secondItem="wQR-V8-v0H" secondAttribute="bottom" id="gHU-ZA-fds"/>
+                            <constraint firstItem="wQR-V8-v0H" firstAttribute="top" secondItem="YBz-BA-MUQ" secondAttribute="top" id="xEJ-q1-cIh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M1r-PE-0uZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0XK-uO-zRh"/>
+                    <constraint firstItem="7Tf-HZ-3Tx" firstAttribute="width" secondItem="M1r-PE-0uZ" secondAttribute="width" multiplier="0.860294" id="4WC-dY-C9F"/>
+                    <constraint firstItem="7Tf-HZ-3Tx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BdV-e2-kOP"/>
+                    <constraint firstAttribute="bottom" secondItem="YBz-BA-MUQ" secondAttribute="bottom" constant="10" id="DiU-Ti-CLF"/>
+                    <constraint firstItem="M1r-PE-0uZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.1" id="RUI-nA-k2P"/>
+                    <constraint firstItem="M1r-PE-0uZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="X9U-K2-mle"/>
+                    <constraint firstAttribute="bottom" secondItem="7Tf-HZ-3Tx" secondAttribute="bottom" constant="10" id="gmy-zr-1sb"/>
+                    <constraint firstAttribute="trailing" secondItem="7Tf-HZ-3Tx" secondAttribute="trailing" constant="10" id="mC1-R6-jyb"/>
+                    <constraint firstAttribute="bottom" secondItem="M1r-PE-0uZ" secondAttribute="bottom" constant="10" id="n6r-1E-roU"/>
+                    <constraint firstItem="YBz-BA-MUQ" firstAttribute="leading" secondItem="M1r-PE-0uZ" secondAttribute="trailing" constant="10" id="rn2-yC-CED"/>
+                    <constraint firstItem="7Tf-HZ-3Tx" firstAttribute="leading" secondItem="YBz-BA-MUQ" secondAttribute="trailing" constant="10" id="w7a-cV-UJF"/>
+                    <constraint firstItem="YBz-BA-MUQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zRx-cZ-WyV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="destinationAddress" destination="ODm-fc-5rx" id="lrN-VJ-Cyy"/>
+                <outlet property="destinationHeader" destination="wQR-V8-v0H" id="Oe3-4d-F0y"/>
+            </connections>
+            <point key="canvasLocation" x="198.47328244274809" y="38.732394366197184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="ic_map_pinpoint" width="16.666666030883789" height="16.666666030883789"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -156,7 +156,19 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zoo-Wh-NaA" userLabel="Destination Suggestion List View">
                                                 <rect key="frame" x="8" y="128" width="414" height="225"/>
+                                                <subviews>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vBS-ea-i64">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </tableView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="vBS-ea-i64" firstAttribute="top" secondItem="Zoo-Wh-NaA" secondAttribute="top" id="2o7-vM-Efn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vBS-ea-i64" secondAttribute="bottom" id="8g0-yl-ecb"/>
+                                                    <constraint firstItem="vBS-ea-i64" firstAttribute="leading" secondItem="Zoo-Wh-NaA" secondAttribute="leading" id="QIb-TQ-XE3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vBS-ea-i64" secondAttribute="trailing" id="oTF-im-XQm"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -194,6 +206,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="9RR-iB-MWx"/>
                     <size key="freeformSize" width="430" height="1500"/>
                     <connections>
+                        <outlet property="destinationSuggestionTableView" destination="vBS-ea-i64" id="Kxf-ai-qZk"/>
                         <outlet property="nowView" destination="cN9-E2-TWf" id="9oR-vG-Aom"/>
                         <outlet property="whereToInnerView" destination="FJz-GR-7hK" id="ID8-EM-NGN"/>
                     </connections>
