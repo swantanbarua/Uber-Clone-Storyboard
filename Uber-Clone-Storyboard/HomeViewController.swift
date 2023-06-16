@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     // MARK: - IBOUTLETS
     
     @IBOutlet weak var whereToInnerView: UIView!
+    @IBOutlet weak var nowView: UIView!
     
     // MARK: - VIEW CONTROLLER LIFECYCLE METHODS
     
@@ -22,5 +23,6 @@ class HomeViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         whereToInnerView.layer.cornerRadius = 45
+        nowView.layer.cornerRadius = 25
     }
 }
