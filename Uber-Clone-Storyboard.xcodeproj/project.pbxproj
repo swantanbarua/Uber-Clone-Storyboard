@@ -66,20 +66,44 @@
 		11DCB2552A3B80580044F162 /* Uber-Clone-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				11DCB2562A3B80580044F162 /* AppDelegate.swift */,
-				11DCB2582A3B80580044F162 /* SceneDelegate.swift */,
+				11DCB2982A3CE40B0044F162 /* Delegates */,
 				11DCB25A2A3B80580044F162 /* ViewController.swift */,
 				11DCB25C2A3B80580044F162 /* Main.storyboard */,
-				11DCB2942A3CE0920044F162 /* TableViewConstants.swift */,
-				11DCB2962A3CE1020044F162 /* IdentifierConstants.swift */,
-				11DCB2902A3CDC230044F162 /* DestinationSuggestionsTableViewCell.swift */,
-				11DCB2912A3CDC230044F162 /* DestinationSuggestionsTableViewCell.xib */,
+				11DCB29A2A3CE44A0044F162 /* Constants */,
+				11DCB2992A3CE4210044F162 /* DestinationSuggestions */,
 				11DCB26E2A3CBC620044F162 /* HomeViewController.swift */,
 				11DCB25F2A3B805A0044F162 /* Assets.xcassets */,
 				11DCB2612A3B805A0044F162 /* LaunchScreen.storyboard */,
 				11DCB2642A3B805A0044F162 /* Info.plist */,
 			);
 			path = "Uber-Clone-Storyboard";
+			sourceTree = "<group>";
+		};
+		11DCB2982A3CE40B0044F162 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				11DCB2562A3B80580044F162 /* AppDelegate.swift */,
+				11DCB2582A3B80580044F162 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		11DCB2992A3CE4210044F162 /* DestinationSuggestions */ = {
+			isa = PBXGroup;
+			children = (
+				11DCB2902A3CDC230044F162 /* DestinationSuggestionsTableViewCell.swift */,
+				11DCB2912A3CDC230044F162 /* DestinationSuggestionsTableViewCell.xib */,
+			);
+			path = DestinationSuggestions;
+			sourceTree = "<group>";
+		};
+		11DCB29A2A3CE44A0044F162 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				11DCB2942A3CE0920044F162 /* TableViewConstants.swift */,
+				11DCB2962A3CE1020044F162 /* IdentifierConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
