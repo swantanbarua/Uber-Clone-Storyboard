@@ -154,12 +154,20 @@
                                                     <constraint firstItem="FJz-GR-7hK" firstAttribute="leading" secondItem="OMi-wu-nyG" secondAttribute="leading" constant="16" id="u2d-tP-Tb1"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zoo-Wh-NaA" userLabel="Destination Suggestion List View">
+                                                <rect key="frame" x="8" y="128" width="414" height="225"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="OMi-wu-nyG" firstAttribute="top" secondItem="bOa-BV-hig" secondAttribute="top" id="4Zq-cl-DH2"/>
+                                            <constraint firstItem="Zoo-Wh-NaA" firstAttribute="leading" secondItem="bOa-BV-hig" secondAttribute="leading" constant="8" id="4hH-Ub-cn4"/>
                                             <constraint firstItem="OMi-wu-nyG" firstAttribute="leading" secondItem="bOa-BV-hig" secondAttribute="leading" id="IuX-de-9lX"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zoo-Wh-NaA" secondAttribute="trailing" constant="8" id="JtP-Pa-asc"/>
+                                            <constraint firstItem="Zoo-Wh-NaA" firstAttribute="top" secondItem="OMi-wu-nyG" secondAttribute="bottom" constant="8" id="TyW-ih-LMQ"/>
                                             <constraint firstItem="OMi-wu-nyG" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.08" id="Zcf-kc-t4a"/>
+                                            <constraint firstItem="Zoo-Wh-NaA" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.15" id="Zrj-AI-PKs"/>
                                             <constraint firstAttribute="height" constant="1500" id="hj1-zK-frw"/>
                                             <constraint firstAttribute="trailing" secondItem="OMi-wu-nyG" secondAttribute="trailing" id="nke-JQ-D9u"/>
                                         </constraints>
