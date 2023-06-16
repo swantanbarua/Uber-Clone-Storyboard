@@ -28,7 +28,7 @@
         <!--Home-->
         <scene sceneID="JSL-In-niZ">
             <objects>
-                <viewController id="arD-ni-MJF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="arD-ni-MJF" customClass="HomeViewController" customModule="Uber_Clone_Storyboard" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxI-ol-Rxm">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,9 +38,31 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOa-BV-hig" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="1500"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMi-wu-nyG" userLabel="Where To View">
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="120"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJz-GR-7hK" userLabel="Where To Inner View">
+                                                        <rect key="frame" x="16" y="16" width="398" height="88"/>
+                                                        <color key="backgroundColor" red="0.74901962280000001" green="0.74901962280000001" blue="0.74901962280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="FJz-GR-7hK" secondAttribute="trailing" constant="16" id="0BX-Pv-yuJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="FJz-GR-7hK" secondAttribute="bottom" constant="16" id="7KH-RU-353"/>
+                                                    <constraint firstItem="FJz-GR-7hK" firstAttribute="top" secondItem="OMi-wu-nyG" secondAttribute="top" constant="16" id="esv-Uo-Dob"/>
+                                                    <constraint firstItem="FJz-GR-7hK" firstAttribute="leading" secondItem="OMi-wu-nyG" secondAttribute="leading" constant="16" id="u2d-tP-Tb1"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="OMi-wu-nyG" firstAttribute="top" secondItem="bOa-BV-hig" secondAttribute="top" id="4Zq-cl-DH2"/>
+                                            <constraint firstItem="OMi-wu-nyG" firstAttribute="leading" secondItem="bOa-BV-hig" secondAttribute="leading" id="IuX-de-9lX"/>
+                                            <constraint firstItem="OMi-wu-nyG" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.08" id="Zcf-kc-t4a"/>
                                             <constraint firstAttribute="height" constant="1500" id="hj1-zK-frw"/>
+                                            <constraint firstAttribute="trailing" secondItem="OMi-wu-nyG" secondAttribute="trailing" id="nke-JQ-D9u"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -64,6 +86,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="9RR-iB-MWx"/>
                     <size key="freeformSize" width="430" height="1500"/>
+                    <connections>
+                        <outlet property="whereToInnerView" destination="FJz-GR-7hK" id="ID8-EM-NGN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQY-0q-26d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
