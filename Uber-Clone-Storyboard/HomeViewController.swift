@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var whereToInnerView: UIView!
     @IBOutlet weak var nowView: UIView!
     @IBOutlet weak var destinationSuggestionTableView: UITableView!
+    @IBOutlet weak var waysToSaveWithUberCollectionView: UICollectionView!
     
     // MARK: - VIEW CONTROLLER LIFECYCLE METHODS
     
