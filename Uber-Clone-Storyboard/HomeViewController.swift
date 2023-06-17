@@ -42,6 +42,7 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: IdentifierConstants.DestinationSuggestionsTableViewCell, for: indexPath) as! DestinationSuggestionsTableViewCell
+        cell.selectionStyle = .none
         cell.destinationHeader.text = destinationSuggestionHeaders[indexPath.row]
         cell.destinationAddress.text = destinationSuggestionAddresses[indexPath.row]
         return cell
