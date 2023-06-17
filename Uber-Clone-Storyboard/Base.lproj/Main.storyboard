@@ -348,33 +348,32 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lte-oi-hJt" userLabel="Ways To Save with Uber View">
-                                                <rect key="frame" x="8" y="549" width="414" height="150"/>
+                                                <rect key="frame" x="8" y="549" width="414" height="225"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ways to save with Uber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zf-YU-gFK">
-                                                        <rect key="frame" x="8" y="8" width="398" height="30"/>
+                                                        <rect key="frame" x="8" y="8" width="398" height="45"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.0078431377190000002" green="0.0078431377190000002" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UIt-EJ-Ifx">
-                                                        <rect key="frame" x="8" y="39" width="406" height="103"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UIt-EJ-Ifx">
+                                                        <rect key="frame" x="8" y="61" width="398" height="156"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Awp-Y8-aHK">
-                                                            <size key="itemSize" width="210" height="98"/>
+                                                            <size key="itemSize" width="233" height="153"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mka-Ml-SFN">
-                                                                <rect key="frame" x="98" y="0.0" width="210" height="98"/>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mka-Ml-SFN" customClass="WaysToSaveWithUberCollectionViewCell" customModule="Uber_Clone_Storyboard">
+                                                                <rect key="frame" x="82.666666666666671" y="0.0" width="233" height="153"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KlC-Sp-BTZ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="210" height="98"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="233" height="153"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                 </collectionViewCellContentView>
-                                                                <size key="customSize" width="210" height="98"/>
+                                                                <size key="customSize" width="233" height="153"/>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -383,8 +382,12 @@
                                                 <constraints>
                                                     <constraint firstItem="0Zf-YU-gFK" firstAttribute="top" secondItem="Lte-oi-hJt" secondAttribute="top" constant="8" id="FRC-3w-bfB"/>
                                                     <constraint firstAttribute="trailing" secondItem="0Zf-YU-gFK" secondAttribute="trailing" constant="8" id="KSk-qW-yOT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UIt-EJ-Ifx" secondAttribute="trailing" constant="8" id="MIh-Yn-k8Z"/>
                                                     <constraint firstItem="0Zf-YU-gFK" firstAttribute="height" secondItem="Lte-oi-hJt" secondAttribute="height" multiplier="0.2" id="RjS-fh-E9y"/>
                                                     <constraint firstItem="0Zf-YU-gFK" firstAttribute="leading" secondItem="Lte-oi-hJt" secondAttribute="leading" constant="8" id="VWK-3J-lLR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UIt-EJ-Ifx" secondAttribute="bottom" constant="8" id="X3W-cY-ROU"/>
+                                                    <constraint firstItem="UIt-EJ-Ifx" firstAttribute="top" secondItem="0Zf-YU-gFK" secondAttribute="bottom" constant="8" id="vcV-hb-Bim"/>
+                                                    <constraint firstItem="UIt-EJ-Ifx" firstAttribute="leading" secondItem="Lte-oi-hJt" secondAttribute="leading" constant="8" id="xrn-3l-yQ3"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -396,7 +399,7 @@
                                             <constraint firstItem="OMi-wu-nyG" firstAttribute="leading" secondItem="bOa-BV-hig" secondAttribute="leading" id="IuX-de-9lX"/>
                                             <constraint firstAttribute="trailing" secondItem="Zoo-Wh-NaA" secondAttribute="trailing" constant="8" id="JtP-Pa-asc"/>
                                             <constraint firstItem="g1H-XC-Fay" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.12" id="MOA-ZI-MsT"/>
-                                            <constraint firstItem="Lte-oi-hJt" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.1" id="TcT-XX-0xy"/>
+                                            <constraint firstItem="Lte-oi-hJt" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.15" id="TcT-XX-0xy"/>
                                             <constraint firstItem="Zoo-Wh-NaA" firstAttribute="top" secondItem="OMi-wu-nyG" secondAttribute="bottom" constant="8" id="TyW-ih-LMQ"/>
                                             <constraint firstItem="OMi-wu-nyG" firstAttribute="height" secondItem="bOa-BV-hig" secondAttribute="height" multiplier="0.08" id="Zcf-kc-t4a"/>
                                             <constraint firstItem="g1H-XC-Fay" firstAttribute="top" secondItem="Zoo-Wh-NaA" secondAttribute="bottom" constant="8" symbolic="YES" id="ZfO-5U-bHh"/>

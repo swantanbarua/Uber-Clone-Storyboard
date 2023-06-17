@@ -18,6 +18,8 @@
 		11DCB2932A3CDC230044F162 /* DestinationSuggestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DCB2912A3CDC230044F162 /* DestinationSuggestionsTableViewCell.xib */; };
 		11DCB2952A3CE0920044F162 /* TableViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB2942A3CE0920044F162 /* TableViewConstants.swift */; };
 		11DCB2972A3CE1020044F162 /* IdentifierConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB2962A3CE1020044F162 /* IdentifierConstants.swift */; };
+		11DCB29D2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCB29B2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.swift */; };
+		11DCB29E2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11DCB29C2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		11DCB2912A3CDC230044F162 /* DestinationSuggestionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DestinationSuggestionsTableViewCell.xib; sourceTree = "<group>"; };
 		11DCB2942A3CE0920044F162 /* TableViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConstants.swift; sourceTree = "<group>"; };
 		11DCB2962A3CE1020044F162 /* IdentifierConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierConstants.swift; sourceTree = "<group>"; };
+		11DCB29B2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaysToSaveWithUberCollectionViewCell.swift; sourceTree = "<group>"; };
+		11DCB29C2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaysToSaveWithUberCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		11DCB2552A3B80580044F162 /* Uber-Clone-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				11DCB29F2A3D8F120044F162 /* WaysToSaveWithUber */,
 				11DCB2982A3CE40B0044F162 /* Delegates */,
 				11DCB25A2A3B80580044F162 /* ViewController.swift */,
 				11DCB25C2A3B80580044F162 /* Main.storyboard */,
@@ -104,6 +109,15 @@
 				11DCB2962A3CE1020044F162 /* IdentifierConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		11DCB29F2A3D8F120044F162 /* WaysToSaveWithUber */ = {
+			isa = PBXGroup;
+			children = (
+				11DCB29C2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.xib */,
+				11DCB29B2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.swift */,
+			);
+			path = WaysToSaveWithUber;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DCB29E2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.xib in Resources */,
 				11DCB2932A3CDC230044F162 /* DestinationSuggestionsTableViewCell.xib in Resources */,
 				11DCB2632A3B805A0044F162 /* LaunchScreen.storyboard in Resources */,
 				11DCB2602A3B805A0044F162 /* Assets.xcassets in Resources */,
@@ -182,6 +197,7 @@
 				11DCB2572A3B80580044F162 /* AppDelegate.swift in Sources */,
 				11DCB2592A3B80580044F162 /* SceneDelegate.swift in Sources */,
 				11DCB26F2A3CBC620044F162 /* HomeViewController.swift in Sources */,
+				11DCB29D2A3D8EB40044F162 /* WaysToSaveWithUberCollectionViewCell.swift in Sources */,
 				11DCB2972A3CE1020044F162 /* IdentifierConstants.swift in Sources */,
 				11DCB2922A3CDC230044F162 /* DestinationSuggestionsTableViewCell.swift in Sources */,
 				11DCB2952A3CE0920044F162 /* TableViewConstants.swift in Sources */,
